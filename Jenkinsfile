@@ -18,5 +18,10 @@ pipeline{
 		sh './c_jenkins_test'
 	    }
 	}
+	stage('Deploy ENV TEST'){
+	    steps{
+	        echo 'Deploy ENV TEST'
+	    }
+	}
     }
 }
