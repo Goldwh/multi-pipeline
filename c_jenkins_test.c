@@ -7,7 +7,6 @@ int main()
     printf("thank you\n");
     while(i--)
 	{
-	    printf("**");
 	    printf("i = %d\n",i);
 	}
     exit(0);
