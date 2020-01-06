@@ -1,0 +1,37 @@
+pipeline{
+    agent any
+    stages{
+        stage('Code PULL'){
+	    steps{
+	        echo 'Code PULL'
+	    }
+	}
+	stage('Code BUILD'){
+	    steps{
+	        echo 'Code BUILD'
+		sh 'make clean && make'
+	    }
+	}
+	stage('Unit TEST'){
+	    steps{
+	        echo 'Unit TEST'
+		sh './c_jenkins_test'
+	    }
+	}
+	stage('Package'){
+	    steps{
+	        echo 'Package'
+	    }
+	}
+	stage('Deploy TEST ENV'){
+	    steps{
+	        echo 'Deploy TEST ENV'
+	    }
+	}
+	stage('Auto API TEST'){
+	    steps{
+	        echo 'Auto API TEST'
+	    }
+	}
+    }
+}
