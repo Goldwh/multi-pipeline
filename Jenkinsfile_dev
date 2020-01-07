@@ -23,15 +23,15 @@ pipeline{
     success{
     	emailext(
     		subject: '${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志',
-    		body: '${FILE,path="email.html"}'
-    		to: '794918503@qq.com'
+    		body: '${FILE,path="email.html"}',
+    		to: "794918503@qq.com",
     	)
     }
     failure{
     	emailext(
     		subject: '${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志',
-    		body: '${FILE,path="email.html"}'
-    		to: '794918503@qq.com'
+    		body: '${file.path="email.html"}',
+    		to: "794918503@qq.com",
     	)
     }
     }
