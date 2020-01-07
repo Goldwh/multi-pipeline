@@ -6,17 +6,33 @@ pipeline{
 	        echo 'Code PULL'
 	    }
 	}
-	stage('Code BUILD'){
+	    stage('Code BUILD'){
 	    steps{
 	        echo 'Code BUILD'
-		sh 'make clean && make'
+		    sh 'make clean && make'
 	    }
 	}
-	stage('Code TEST'){
+	    stage('Code TEST'){
 	    steps{
 	        echo 'Code TEST'
-		sh './c_jenkins_test'
+		    sh './c_jenkins_test'
 	    }
 	}
+    }
+    post{
+    success{
+    	emailext(
+    		subject: '${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志',
+    		body: '${FILE,path="email.html"}'
+    		to: '794918503@qq.com'
+    	)
+    }
+    failure{
+    	emailext(
+    		subject: '${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志',
+    		body: '${FILE,path="email.html"}'
+    		to: '794918503@qq.com'
+    	)
+    }
     }
 }
