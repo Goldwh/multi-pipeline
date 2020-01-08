@@ -4,7 +4,7 @@ pipeline{
         stage('Code PULL'){
 	    when{
 	        anyOf{
-    		    branch 'master'
+    		    branch 'master';
     		    branch 'dev'
 		}
 	    }
@@ -15,7 +15,7 @@ pipeline{
 	    stage('Code BUILD'){
         when{
             anyOf{
-                branch 'master'
+                branch 'master';
                 branch 'dev'
         }
         }
@@ -27,7 +27,7 @@ pipeline{
 		stage('Unit TEST'){
         when{
             anyOf{
-                branch 'master'
+                branch 'master';
                 branch 'dev'
         }
         }
