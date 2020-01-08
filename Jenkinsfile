@@ -3,10 +3,10 @@ pipeline{
     stages{
         stage('Code PULL'){
 	    when{
-	        anyOf{
+
     		    branch 'master';
     		    branch 'dev'
-		}
+
 	    }
 	    steps{
 	        echo 'Code PULL'
@@ -14,10 +14,10 @@ pipeline{
 	}
 	    stage('Code BUILD'){
         when{
-            anyOf{
+
                 branch 'master';
                 branch 'dev'
-        }
+        
         }
 	    steps{
 	        echo 'Code BUILD'
@@ -26,10 +26,10 @@ pipeline{
 	}
 		stage('Unit TEST'){
         when{
-            anyOf{
+
                 branch 'master';
                 branch 'dev'
-        }
+        
         }
 	    steps{
 	        echo 'Unit TEST'
