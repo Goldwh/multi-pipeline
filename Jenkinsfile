@@ -4,7 +4,7 @@ pipeline{
         stage('Code PULL'){
 	    when{
 
-    		    branch "dev"
+    		    branch "master"
 
 	    }
 	    steps{
@@ -15,7 +15,7 @@ pipeline{
         when{
 
 
-                branch "dev"
+                branch "master"
         
         }
 	    steps{
@@ -27,7 +27,7 @@ pipeline{
         when{
 
 
-                branch "dev"
+                branch "master"
         
         }
 	    steps{
