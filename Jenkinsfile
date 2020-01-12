@@ -10,6 +10,7 @@ pipeline{
         }
         }
         steps{
+            echo "branch=${env.BRANCH_NAME}"
             echo 'Code PULL'
         }
     }
