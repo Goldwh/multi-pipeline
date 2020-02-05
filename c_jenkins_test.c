@@ -8,7 +8,8 @@ int main()
     while(i--)
 	{
 	    printf("*");	
-	    printf("i = %d\n",i);
+	    printf("i = %d",i);
+	    printf("*\n");
 	}
     exit(0);
 }
