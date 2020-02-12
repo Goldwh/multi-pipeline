@@ -1,3 +1,4 @@
+properties([pipelineTriggers([githubPush()])])
 pipeline{
     agent any
     stages{
@@ -9,6 +10,7 @@ pipeline{
         }
         }
         steps{
+            echo "branch=${env.BRANCH_NAME}"
             echo 'Code PULL'
         }
     }
