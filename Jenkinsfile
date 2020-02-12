@@ -23,7 +23,7 @@ pipeline{
         }
         steps{
             echo 'Code BUILD'
-        sh 'make clean && make'
+            sh 'make clean && make'
         }
     }
         stage('Unit TEST'){
@@ -35,7 +35,7 @@ pipeline{
         }
         steps{
             echo 'Unit TEST'
-        sh './c_jenkins_test'
+            sh './main'
         }
     }
         stage('Package'){
