@@ -9,7 +9,6 @@ int main()
 	{
 	    printf("*");	
 	    printf("i = %d\n",i);
-	    printf("xxxx");
 	}
     exit(0);
 }
