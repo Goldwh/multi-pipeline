@@ -9,6 +9,7 @@ int main()
 	{
 	    printf("*");	
 	    printf("i = %d\n",i);
+	    printf("***==========**");
 	}
     exit(0);
 }
