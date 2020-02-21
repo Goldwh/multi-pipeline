@@ -23,8 +23,7 @@ pipeline{
         }
         steps{
             echo 'Code BUILD'
-	    sh 'rm test'
-            sh 'make'
+            sh 'make clean && make'
         }
     }
         stage('Unit TEST'){
