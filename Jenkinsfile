@@ -23,6 +23,7 @@ pipeline{
         }
         steps{
             echo 'Code BUILD'
+	    sh 'rm test'
             sh 'make'
         }
     }
