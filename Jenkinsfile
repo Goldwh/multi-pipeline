@@ -35,7 +35,7 @@ pipeline{
         }
         steps{
             echo 'Unit TEST'
-            sh './main'
+            sh './test'
         }
     }
         stage('Package'){
