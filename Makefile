@@ -2,4 +2,4 @@ IINC=-I/usr/local/include/CUnit
 LIB=-L/usr/local/lib/
 
 all:	strformat.c testcase.c
-	cc -o test $(INC) $(LIB)  $^ -lcunit -static
+	gcc -o test $(INC) $(LIB)  $^ -lcunit -static
