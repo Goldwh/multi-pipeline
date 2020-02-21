@@ -6,7 +6,7 @@ pipeline{
         when{
             anyOf{
                 branch 'master';
-                branch 'dev'
+                branch 'Cunit-test'
         }
         }
         steps{
@@ -18,7 +18,7 @@ pipeline{
         when{
             anyOf{
                 branch 'master';
-                branch 'dev'
+                branch 'Cunit-test'
         }
         }
         steps{
@@ -30,7 +30,7 @@ pipeline{
         when{
             anyOf{
                 branch 'master';
-                branch 'dev'
+                branch 'Cunit-test'
         }
         }
         steps{
