@@ -7,6 +7,7 @@ pipeline{
             anyOf{
                 branch 'master';
                 branch 'Cunit-test'
+		branch 'Cunit-test1'
         }
         }
         steps{
@@ -19,6 +20,7 @@ pipeline{
             anyOf{
                 branch 'master';
                 branch 'Cunit-test'
+		branch 'Cunit-test1'
         }
         }
         steps{
@@ -31,6 +33,7 @@ pipeline{
             anyOf{
                 branch 'master';
                 branch 'Cunit-test'
+		branch 'Cunit-test1'
         }
         }
         steps{
