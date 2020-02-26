@@ -1,6 +1,6 @@
-INC=-I/home/shena/opensrc_install_directory/include/
+INC=-I/usr/local/include/CUnit
 
-LIB=-L/home/shena/opensrc_install_directory/lib/
+LIB=-L/usr/local/lib/
 
 CFLAGS=-g
 
@@ -12,8 +12,8 @@ TARGET=test
 
 
 all: 
-#	gcc $(SOURCE_FILE) -o $(TARGET) $(INC) $(LIB) -lcunit
-	gcc $(SOURCE_FILE) -o $(TARGET) $(CFLAGS) $(LDLIBS)  
+	gcc $(SOURCE_FILE) -o $(TARGET) $(INC) $(LIB) -lcunit
+#	gcc $(SOURCE_FILE) -o $(TARGET) $(CFLAGS) $(LDLIBS)  
 
 clean:
 	rm -rf *.o test
