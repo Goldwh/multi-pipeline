@@ -90,8 +90,8 @@ int suite_success_clean(void){
 
 //定义suite数组，包括多个suite，每个suite又会包括若干个测试方法。
 CU_SuiteInfo suites[] = {
-    {"testSuite1",suite_success_init,suite_success_clean,testcase},
-    {"testsuite2",suite_success_init,suite_success_clean,testcase2},
+    {"testSuite1",suite_success_init,suite_success_clean,NULL,NULL,testcase},
+    {"testsuite2",suite_success_init,suite_success_clean,NULL,NULL,testcase2},
     CU_SUITE_INFO_NULL
 };
 
