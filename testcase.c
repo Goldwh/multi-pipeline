@@ -128,12 +128,12 @@ int RunTest(){
                 CU_automated_run_tests();
                 //************************************/
                 
-                /***** Basice Mode *******************/
+                /***** Basice Mode *******************
                 CU_basic_set_mode(CU_BRM_VERBOSE);
                 CU_basic_run_tests();
                 //************************************/
 
-                /*****Console Mode ********************
+                /*****Console Mode ********************/
                 CU_console_run_tests();
                 //************************************/
 
